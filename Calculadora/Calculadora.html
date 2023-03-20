@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<!-- Agregar enlaces a los archivos CSS de Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Calculadora</h1>
+				<label for="num1">Primer número:</label>
+				<input type="number" class="form-control" id="num1">
+          
+                <label for="num2">Segundo número:</label>
+                <input type="number" class="form-control" id="num2">
+
+                <label for="operador">Dime el operador con el que desea hacer la cuenta:</label>
+                <select name="operacion" id="operacion">
+                  <option value="sumar">Sumar</option>
+                  <option value="restar">Restar</option>
+                  <option value="multiplicar">Multiplicar</option>
+                  <option value="dividir">Dividir</option>
+                </select>
+                <br>
+            <button type="button" class="btn-primary" onclick="calcular()">Calcular</button>
+            <br>
+            <br>
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly>
+
+
+            <script src="Operaciones.js"></script>
+        </div>
+</body>
+</html>
+            
